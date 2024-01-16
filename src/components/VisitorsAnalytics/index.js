@@ -36,13 +36,13 @@ export default function VisitorsAnalytics({ allVisitors }) {
 
   const series = [
     {
-      name: "Visitors",
+      name: "Visiteurs",
       data: maxUniqueLocationToShow.map((locationItem) =>
         getAllVisitorsByCountry(allVisitors, locationItem)
       ),
     },
     {
-      name: "Premium Visitors",
+      name: "Visiteurs premium",
       data: maxUniqueLocationToShow.map((locationItem) =>
         getAllPremiumVisitorsByCountry(allVisitors, locationItem)
       ),
@@ -52,7 +52,7 @@ export default function VisitorsAnalytics({ allVisitors }) {
   return (
     <div className="col-span-12 rounded-sm border border-stroke bg-white px-5 pt-7 pb-7 shadow sm:px-7.5 xl:col-span-4">
       <div className="flex w-full flex-col flex-wrap items-start justify-between gap-3 sm:flex-nowrap">
-        <p className="font-bold text-primary">Visitors By Country</p>
+        <p className="font-bold text-primary">Visiteurs par pays</p>
         <div className="w-full">
           <div id="YearlyAnalyticsChart" className="-ml-5">
             <ReactApexChart

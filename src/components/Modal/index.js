@@ -57,8 +57,8 @@ export default function Modal({
                     : null}
                 </div>
                 <div className="flex gap-2 items-center justify-end p-6 border-t border-solid rounded-b">
-                  <Button text={"Add"} onClick={onAdd} />
-                  <Button onClick={() => setShow(false)} text={"Close"} />
+                  <Button text={"Ajouter"} onClick={onAdd} />
+                  <Button onClick={() => setShow(false)} text={"Fermer"} />
                 </div>
               </div>
             </div>

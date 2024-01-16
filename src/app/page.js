@@ -1,6 +1,5 @@
 import DashboardLayout from "@/components/dashboard";
 
-//get all products
 async function extractAllProducts() {
   const res = await fetch("http://localhost:3000/api/product/all-products", {
     method: "GET",
@@ -11,8 +10,6 @@ async function extractAllProducts() {
 
   return data;
 }
-
-//get all visitors list
 
 async function extractAllVisitors() {
   const res = await fetch("http://localhost:3000/api/visitors/all-visitors", {
@@ -30,6 +27,9 @@ export default async function Home() {
   const allVisitors = await extractAllVisitors();
 
   return (
-    <DashboardLayout allProducts={allProducts && allProducts.data} allVisitors={allVisitors && allVisitors.data} />
+    <DashboardLayout
+      allProducts={allProducts && allProducts.data}
+      allVisitors={allVisitors && allVisitors.data}
+    />
   );
 }

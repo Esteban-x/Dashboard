@@ -45,7 +45,7 @@ export default function ProductLayout({ children }) {
 
   return (
     <div>
-      <Button onClick={() => setShowModal(true)} text={"Add New Product"} />
+      <Button onClick={() => setShowModal(true)} text={"Ajouter un produit"} />
       {children}
       <Modal
         show={showModal}

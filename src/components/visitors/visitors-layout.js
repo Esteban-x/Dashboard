@@ -44,7 +44,10 @@ export default function VisitorsLayout({ children }) {
 
   return (
     <div>
-      <Button onClick={() => setShowModal(true)} text={"Add Visitors Info"} />
+      <Button
+        onClick={() => setShowModal(true)}
+        text={"Ajouter infos visiteurs "}
+      />
       {children}
       <Modal
         show={showModal}

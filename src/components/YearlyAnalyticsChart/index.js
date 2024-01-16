@@ -5,13 +5,13 @@ import ReactApexChart from "react-apexcharts";
 
 const monthsArray = [
   "jan",
-  "feb",
+  "fev",
   "mar",
-  "apr",
-  "may",
-  "jun",
+  "avr",
+  "mai",
+  "jui",
   "jul",
-  "aug",
+  "aoû",
   "sep",
   "oct",
   "nov",
@@ -46,11 +46,11 @@ export default function YearlyAnalyticsChart({ allProducts }) {
   console.log(allProducts);
   const series = [
     {
-      name: "Sales",
+      name: "Ventes",
       data: monthsArray.map((item) => getSales(allProducts, item)),
     },
     {
-      name: "Cost",
+      name: "Coût",
       data: monthsArray.map((item) => getCost(allProducts, item)),
     },
     {
@@ -62,7 +62,7 @@ export default function YearlyAnalyticsChart({ allProducts }) {
   return (
     <div className="col-span-12 rounded-sm border border-stroke bg-white px-5 pt-7 pb-7 shadow sm:px-7.5 xl:col-span-8">
       <div className="flex w-full flex-col flex-wrap items-start justify-between gap-3 sm:flex-nowrap">
-        <p className="font-bold text-primary">Yearly Analytics Overview</p>
+        <p className="font-bold text-primary">Analyse de l'année</p>
         <div className="w-full">
           <div id="YearlyAnalyticsChart" className="-ml-5">
             <ReactApexChart

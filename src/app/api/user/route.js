@@ -12,20 +12,20 @@ export async function POST(req) {
     if (newUser) {
       return NextResponse.json({
         success: true,
-        message: "User registered",
+        message: "Utilisateur enregistré",
       });
     } else {
-        return NextResponse.json({
-            success: false,
-            message: "failed to register the user ! Please try again",
-          });  
+      return NextResponse.json({
+        success: false,
+        message: "L'inscription a échouée veuillez ressayer plus tard",
+      });
     }
   } catch (e) {
     console.log(e);
 
     return NextResponse.json({
       success: false,
-      message: "Something went wrong ! Please try again",
+      message: "Une erreur est survenue",
     });
   }
 }

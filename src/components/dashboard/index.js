@@ -25,12 +25,12 @@ export default function DashboardLayout({ allVisitors, allProducts }) {
                 )
               : 0
           }
-          label={"Total Premium Visitors"}
+          label={"Total des utilisateurs premium"}
         />
         <Card
           data={allProducts && allProducts.length}
           icon={<MdOutlineProductionQuantityLimits size={25} />}
-          label={"Total Products"}
+          label={"Total des produits"}
         />
         <Card
           data={
@@ -41,7 +41,7 @@ export default function DashboardLayout({ allVisitors, allProducts }) {
                 )
               : 0
           }
-          label={"Total Sales"}
+          label={"Total des ventes"}
           icon={<BiMoneyWithdraw size={25} />}
         />
         <Card
@@ -53,7 +53,7 @@ export default function DashboardLayout({ allVisitors, allProducts }) {
                 )
               : 0
           }
-          label={"Total Visitors"}
+          label={"Total des visiteurs"}
           icon={<BsFillPersonCheckFill size={25} />}
         />
       </div>

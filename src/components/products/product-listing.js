@@ -19,7 +19,7 @@ export default async function ProductListing() {
 
   return (
     <Table
-      tableHeaderText="All Products Overview"
+      tableHeaderText="Liste de tous les produits"
       tableHeaderCells={productTableHeaders}
       data={
         allProducts && allProducts.data && allProducts.data.length

@@ -2,85 +2,85 @@ export const productFormControls = [
   {
     id: "name",
     type: "text",
-    placeholder: "Enter product name",
-    label: "Name",
+    placeholder: "Entrer le nom du produit",
+    label: "Nom",
     componentType: "input",
   },
   {
     id: "visitors",
     type: "number",
-    placeholder: "Enter No of visitors",
-    label: "No of visitors",
+    placeholder: "Entrer le nombre de visiteurs",
+    label: "Nombre de visiteurs",
     componentType: "input",
   },
   {
     id: "price",
     type: "number",
-    placeholder: "Enter Product Price",
-    label: "Product Price",
+    placeholder: "Entrer le prix du produit",
+    label: "Prix du produit",
     componentType: "input",
   },
   {
     id: "sales",
     type: "number",
-    placeholder: "Enter No of sales",
-    label: "No of Sales",
+    placeholder: "Entrer le nombre de ventes",
+    label: "Nombre de ventes",
     componentType: "input",
   },
   {
     id: "month",
     type: "",
     placeholder: "",
-    label: "Month",
+    label: "Mois",
     componentType: "select",
     options: [
       {
         id: "jan",
-        label: "January",
+        label: "Janvier",
       },
       {
         id: "feb",
-        label: "February",
+        label: "Février",
       },
       {
         id: "mar",
-        label: "March",
+        label: "Mars",
       },
       {
         id: "apr",
-        label: "April",
+        label: "Avril",
       },
       {
         id: "may",
-        label: "May",
+        label: "Mai",
       },
       {
         id: "jun",
-        label: "June",
+        label: "Juin",
       },
       {
         id: "jul",
-        label: "July",
+        label: "Juillet",
       },
       {
         id: "aug",
-        label: "August",
+        label: "Août",
       },
       {
         id: "sep",
-        label: "September",
+        label: "Septembre",
       },
       {
         id: "oct",
-        label: "October",
+        label: "Octobre",
       },
       {
         id: "nov",
-        label: "November",
+        label: "Novembre",
       },
       {
         id: "dec",
-        label: "December",
+        label: "Décembre",
       },
     ],
   },
@@ -89,19 +89,19 @@ export const productFormControls = [
 export const productTableHeaders = [
   {
     id: "name",
-    label: "Name",
+    label: "Nom",
   },
   {
     id: "month",
-    label: "Month",
+    label: "Mois",
   },
   {
     id: "price",
-    label: "Price",
+    label: "Prix",
   },
   {
     id: "sales",
-    label: "Sales",
+    label: "Ventes",
   },
   {
     id: "revenue",
@@ -110,46 +110,46 @@ export const productTableHeaders = [
 ];
 
 export const monthsMapper = {
-  jan: "January",
-  feb: "February",
-  mar: "March",
-  apr: "April",
-  may: "May",
-  jun: "June",
-  jul: "July",
-  aug: "August",
-  sep: "September",
-  oct: "October",
-  nov: "November",
-  dec: "December",
+  jan: "Janvier",
+  feb: "Février",
+  mar: "Mars",
+  apr: "Avril",
+  may: "Mai",
+  jun: "Juin",
+  jul: "Juillet",
+  aug: "Août",
+  sep: "Septembre",
+  oct: "Octobre",
+  nov: "Novembre",
+  dec: "Décembre",
 };
 
 export const deviceMapper = {
-  desktop: "Desktop",
-  laptop: "Laptop",
+  desktop: "PC fixe",
+  laptop: "PC portable",
   mobile: "Mobile",
-  tablet: "Tablet",
+  tablet: "Tablette",
 };
 
 export const visiorsFormControls = [
   {
     id: "visitors",
     type: "number",
-    placeholder: "Enter No of visitors",
-    label: "Visitors",
+    placeholder: "Entrer un nombre de visiteurs",
+    label: "Visiteurs",
     componentType: "input",
   },
   {
     id: "premiumUserNo",
     type: "number",
-    placeholder: "Enter premiumUser no",
-    label: "Premium Users No",
+    placeholder: "Entrer un numéro d'utilisateur premium",
+    label: "Numéro d'utilisateur premium",
     componentType: "input",
   },
   {
     id: "location",
     type: "text",
-    placeholder: "Enter location",
+    placeholder: "Entrer une location",
     label: "Location",
     componentType: "input",
   },
@@ -157,20 +157,20 @@ export const visiorsFormControls = [
     id: "device",
     type: "",
     placeholder: "",
-    label: "Device",
+    label: "Appareil",
     componentType: "select",
     options: [
       {
         id: "desktop",
-        label: "Desktop",
+        label: "PC fixe",
       },
       {
         id: "laptop",
-        label: "laptop",
+        label: "PC portable",
       },
       {
         id: "tablet",
-        label: "Tablet",
+        label: "Tablette",
       },
       {
         id: "mobile",
@@ -182,56 +182,56 @@ export const visiorsFormControls = [
     id: "month",
     type: "",
     placeholder: "",
-    label: "Month",
+    label: "Mois",
     componentType: "select",
     options: [
       {
         id: "jan",
-        label: "January",
+        label: "Janvier",
       },
       {
         id: "feb",
-        label: "February",
+        label: "Février",
       },
       {
         id: "mar",
-        label: "March",
+        label: "Mars",
       },
       {
         id: "apr",
-        label: "April",
+        label: "Avril",
       },
       {
         id: "may",
-        label: "May",
+        label: "Mai",
       },
       {
         id: "jun",
-        label: "June",
+        label: "Juin",
       },
       {
         id: "jul",
-        label: "July",
+        label: "Juillet",
       },
       {
         id: "aug",
-        label: "August",
+        label: "Août",
       },
       {
         id: "sep",
-        label: "September",
+        label: "Septembre",
       },
       {
         id: "oct",
-        label: "October",
+        label: "Octobre",
       },
       {
         id: "nov",
-        label: "November",
+        label: "Novembre",
       },
       {
         id: "dec",
-        label: "December",
+        label: "Décembre",
       },
     ],
   },
@@ -240,7 +240,7 @@ export const visiorsFormControls = [
 export const visitorsTableHeaders = [
   {
     id: "visitors",
-    label: "Visitors",
+    label: "Visiteurs",
   },
   {
     id: "location",
@@ -248,18 +248,17 @@ export const visitorsTableHeaders = [
   },
   {
     id: "device",
-    label: "Device",
+    label: "Appareil",
   },
   {
     id: "premiumUserNo",
-    label: "Premium Visitor",
+    label: "Visiteur premium",
   },
   {
     id: "month",
-    label: "Month",
+    label: "Mois",
   },
 ];
-
 
 export const yearlyAnalyticsChartOptions = {
   legend: {
@@ -340,13 +339,13 @@ export const yearlyAnalyticsChartOptions = {
     type: "category",
     categories: [
       "Jan",
-      "Feb",
+      "Fev",
       "Mar",
-      "Apr",
-      "May",
-      "Jun",
+      "Avr",
+      "Mai",
+      "Jui",
       "Jul",
-      "Aug",
+      "Aoû",
       "Sep",
       "Oct",
       "Nov",
@@ -426,13 +425,12 @@ export const visitorAnalyticsChartOptions = {
   },
 };
 
-
 export const deviceAnalyticsChartOptions = {
   chart: {
     type: "donut",
   },
   colors: ["#10B981", "#375E83", "#259AE6", "#FFA70B"],
-  labels: ["Desktop", "Laptop", "Tablet", "Mobile"],
+  labels: ["PC fixe", "PC portable", "Tablette", "Mobile"],
   legend: {
     show: true,
     position: "bottom",

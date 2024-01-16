@@ -18,13 +18,13 @@ const menuItems = [
   },
   {
     id: "products",
-    label: "Products",
+    label: "Produits",
     path: "/products",
     icon: <TbBrandProducthunt size={25} />,
   },
   {
     id: "visitors",
-    label: "Visitors",
+    label: "Visiteurs",
     path: "/visitors",
     icon: <PiUsersFourLight size={25} />,
   },
@@ -32,15 +32,15 @@ const menuItems = [
 
 export default function Sidebar() {
   const { sideBarOpen, setSideBarOpen } = useContext(GlobalContext);
-  const {status} = useSession()
+  const { status } = useSession();
 
   const pathName = usePathname();
   const router = useRouter();
 
   const handlenavigate = (getMenuItem) => {
-    if(status === 'unauthenticated') {
-      router.push('/unauth-page')
-      return
+    if (status === "unauthenticated") {
+      router.push("/unauth-page");
+      return;
     }
     router.push(getMenuItem.path);
   };
@@ -53,7 +53,7 @@ export default function Sidebar() {
     >
       <div className="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
         <Link href={"/"} className="text-[40px] text-white">
-          Analytics
+          Bienvenue
         </Link>
       </div>
       <div className="flex flex-col overflow-y-auto duration-300 ease-linear">

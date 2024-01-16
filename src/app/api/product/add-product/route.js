@@ -14,12 +14,12 @@ export async function POST(req) {
     if (newlyCreatedProduct) {
       return NextResponse.json({
         success: true,
-        message: "Product added successfully",
+        message: "Produit ajouté avec succés",
       });
     } else {
       return NextResponse.json({
         success: false,
-        message: "failed to add a product ! Please try after some time.",
+        message: "Ajout du produit impossible veuillez ressayer plus tard",
       });
     }
   } catch (e) {
@@ -27,7 +27,7 @@ export async function POST(req) {
 
     return NextResponse.json({
       success: false,
-      message: "Something went wrong",
+      message: "Une erreur est survenue",
     });
   }
 }

@@ -14,12 +14,12 @@ export async function POST(req) {
     if (newlyCreatedVisitorsInfo) {
       return NextResponse.json({
         success: true,
-        message: "Visitors data added successfully",
+        message: "Données de l'utilisateur ajoutées avec succès",
       });
     } else {
       return NextResponse.json({
         success: false,
-        message: "failed to add a visitor ! Please try after some time.",
+        message: "Impossible d'ajouter un visiteur veuillez ressayer plus tard",
       });
     }
   } catch (e) {
@@ -27,7 +27,7 @@ export async function POST(req) {
 
     return NextResponse.json({
       success: false,
-      message: "Something went wrong",
+      message: "Une erreur est survenue",
     });
   }
 }

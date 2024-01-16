@@ -18,7 +18,7 @@ export async function GET(req) {
       return NextResponse.json({
         success: false,
         message:
-          "failed to fetch the products ! Please try again after some time",
+          "Impossible de recupérer les produits veuillez ressayer plus tard",
       });
     }
   } catch (e) {
@@ -26,7 +26,7 @@ export async function GET(req) {
 
     return NextResponse.json({
       success: false,
-      message: "Something went wrong",
+      message: "Une erreur est survenue",
     });
   }
 }
