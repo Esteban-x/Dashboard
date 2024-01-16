@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
 
- const connectToDB = async () => {
+const connectToDB = async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://sangammukherjee2022:sangammukherjee2023@cluster0.fca1inn.mongodb.net/"
+      "mongodb+srv://tiagzo:free@cluster0.b5pvpka.mongodb.net/dashboard?retryWrites=true&w=majority"
     );
-    console.log("Connected to mongodb");
+    console.log("Connecté à mongodb");
   } catch (error) {
     console.log(error);
   }
