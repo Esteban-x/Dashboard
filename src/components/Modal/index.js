@@ -2,6 +2,7 @@ import Button from "../FormControls/button";
 import Input from "../FormControls/input";
 import Select from "../FormControls/select";
 
+//Modal stylé
 export default function Modal({
   show,
   title,
