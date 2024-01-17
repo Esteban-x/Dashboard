@@ -15,6 +15,7 @@ async function extractAllProducts() {
   return data;
 }
 
+//prod test
 export default async function ProductListing() {
   const allProducts = await extractAllProducts();
 
