@@ -1,10 +1,13 @@
 import DashboardLayout from "@/components/dashboard";
 
 async function extractAllProducts() {
-  const res = await fetch("/api/product/all-products", {
-    method: "GET",
-    cache: "no-store",
-  });
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_DOMAIN}/api/product/all-products`,
+    {
+      method: "GET",
+      cache: "no-store",
+    }
+  );
 
   const data = await res.json();
 
@@ -12,10 +15,13 @@ async function extractAllProducts() {
 }
 
 async function extractAllVisitors() {
-  const res = await fetch("/api/visitors/all-visitors", {
-    method: "GET",
-    cache: "no-store",
-  });
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_DOMAIN}/api/visitors/all-visitors`,
+    {
+      method: "GET",
+      cache: "no-store",
+    }
+  );
 
   const data = await res.json();
 
