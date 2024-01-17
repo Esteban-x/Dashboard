@@ -19,16 +19,13 @@ const authOptions = {
           const isUserExists = await User.findOne({ email });
 
           if (!isUserExists) {
-            const res = await fetch(
-              `${process.env.NEXT_PUBLIC_DOMAIN}/api/user`,
-              {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ name, email }),
-              }
-            );
+            const res = await fetch(`/api/user`, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ name, email }),
+            });
 
             if (res.success) {
               return user;

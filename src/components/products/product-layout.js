@@ -23,16 +23,14 @@ export default function ProductLayout({ children }) {
   console.log(formData);
 
   async function handleAddProduct() {
-    const res = await fetch(
-      `${process.env.NEXT_PUBLIC_DOMAIN}/api/product/add-product`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      }
-    );
+    const domain = typeof window !== "undefined" ? window.location.origin : "";
+    const res = await fetch(`${domain}/api/product/add-product`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
 
     const data = await res.json();
 
