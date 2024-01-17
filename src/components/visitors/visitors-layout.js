@@ -20,13 +20,16 @@ export default function VisitorsLayout({ children }) {
   const router = useRouter();
 
   async function handleAddVisitors() {
-    const res = await fetch("/api/visitors/add-visitor", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_DOMAIN}/api/visitors/add-visitor`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    );
 
     const data = await res.json();
 
