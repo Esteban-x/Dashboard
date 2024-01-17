@@ -14,7 +14,7 @@ export default function Header() {
   const router = useRouter();
 
   console.log(status);
-
+  //test
   useEffect(() => {
     if (status === "authenticated") router.push("/");
   }, [status]);
