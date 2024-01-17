@@ -50,7 +50,7 @@ export default function Sidebar() {
   const handleClick = () => {
     setSideBarOpen(!sideBarOpen);
     setIsClicked(true);
-    setTimeout(() => setIsClicked(false), 500); // Réinitialisez l'état après l'animation
+    setTimeout(() => setIsClicked(false), 500);
   };
 
   return (

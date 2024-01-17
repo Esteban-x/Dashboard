@@ -1,7 +1,7 @@
 import DashboardLayout from "@/components/dashboard";
 
 async function extractAllProducts() {
-  const res = await fetch("http://localhost:3000/api/product/all-products", {
+  const res = await fetch("/api/product/all-products", {
     method: "GET",
     cache: "no-store",
   });
@@ -12,7 +12,7 @@ async function extractAllProducts() {
 }
 
 async function extractAllVisitors() {
-  const res = await fetch("http://localhost:3000/api/visitors/all-visitors", {
+  const res = await fetch("/api/visitors/all-visitors", {
     method: "GET",
     cache: "no-store",
   });
